@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/bussproofs
+# catalog-date 2007-03-05 14:17:42 +0100
+# catalog-license lppl1.3
+# catalog-version 1.0
 Name:		texlive-bussproofs
 Version:	1.0
 Release:	1
@@ -44,6 +50,7 @@ the package file itself.
 %{_texmfdistdir}/tex/latex/bussproofs/bussproofs.sty
 %doc %{_texmfdistdir}/doc/latex/bussproofs/testbp2.pdf
 %doc %{_texmfdistdir}/doc/latex/bussproofs/testbp2.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -54,3 +61,5 @@ the package file itself.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
