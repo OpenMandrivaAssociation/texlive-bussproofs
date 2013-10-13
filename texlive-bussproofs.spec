@@ -1,12 +1,12 @@
-# revision 15878
+# revision 27488
 # category Package
 # catalog-ctan /macros/latex/contrib/bussproofs
-# catalog-date 2007-03-05 14:17:42 +0100
+# catalog-date 2012-08-21 20:18:04 +0200
 # catalog-license lppl1.3
-# catalog-version 1.0
+# catalog-version 1.1
 Name:		texlive-bussproofs
-Version:	1.0
-Release:	2
+Version:	1.1
+Release:	1
 Summary:	Proof trees in the style of the sequent calculus
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/bussproofs
@@ -39,6 +39,9 @@ the package file itself.
 #-----------------------------------------------------------------------
 %files
 %{_texmfdistdir}/tex/latex/bussproofs/bussproofs.sty
+%doc %{_texmfdistdir}/doc/latex/bussproofs/BussGuide2.pdf
+%doc %{_texmfdistdir}/doc/latex/bussproofs/BussGuide2.tex
+%doc %{_texmfdistdir}/doc/latex/bussproofs/README.txt
 %doc %{_texmfdistdir}/doc/latex/bussproofs/testbp2.pdf
 %doc %{_texmfdistdir}/doc/latex/bussproofs/testbp2.tex
 
@@ -51,18 +54,3 @@ the package file itself.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0-2
-+ Revision: 749893
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.0-1
-+ Revision: 717990
-- texlive-bussproofs
-- texlive-bussproofs
-- texlive-bussproofs
-- texlive-bussproofs
-- texlive-bussproofs
-
