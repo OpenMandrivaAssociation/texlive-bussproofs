@@ -6,7 +6,7 @@
 # catalog-version 1.1
 Name:		texlive-bussproofs
 Version:	1.1
-Release:	4
+Release:	5
 Summary:	Proof trees in the style of the sequent calculus
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/bussproofs
