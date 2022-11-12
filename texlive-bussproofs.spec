@@ -5,8 +5,8 @@ Summary:	Proof trees in the style of the sequent calculus
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/bussproofs
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bussproofs.r54080.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bussproofs.doc.r54080.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bussproofs.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bussproofs.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
