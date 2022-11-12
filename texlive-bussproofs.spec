@@ -1,18 +1,12 @@
-# revision 27488
-# category Package
-# catalog-ctan /macros/latex/contrib/bussproofs
-# catalog-date 2012-08-21 20:18:04 +0200
-# catalog-license lppl1.3
-# catalog-version 1.1
 Name:		texlive-bussproofs
-Version:	1.1
-Release:	11
+Version:	54080
+Release:	1
 Summary:	Proof trees in the style of the sequent calculus
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/bussproofs
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bussproofs.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bussproofs.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bussproofs.r54080.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bussproofs.doc.r54080.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -29,12 +23,12 @@ in LaTeX; an exposition of the commands available is given in
 the package file itself.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -47,7 +41,7 @@ the package file itself.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
