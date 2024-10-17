@@ -3,7 +3,7 @@ Version:	54080
 Release:	2
 Summary:	Proof trees in the style of the sequent calculus
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/bussproofs
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/bussproofs
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bussproofs.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bussproofs.doc.r%{version}.tar.xz
